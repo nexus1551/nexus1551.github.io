@@ -4,7 +4,8 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="35"/></h1>
 <h2 align="center">Студент Петровского колледжа и крутой пацык 🇷🇺 </h2>
 
-<h2> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a> <img width="1080" height="1080" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
+<h2> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a>
+<img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
 
 Моя жизнь и не только, переходи не пожалеешь :) </h2>
 
