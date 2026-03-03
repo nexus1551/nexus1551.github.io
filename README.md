@@ -10,7 +10,7 @@
 Моя жизнь и не только, переходи не пожалеешь :) </h2>
 
 <h2> <a href="https://google.com" target="_blank">Google</a>
-<img width="25" height="100" alt="image" src="https://github.com/user-attachments/assets/260aeef3-b99e-4e08-928f-3dd355a74867" />
+<img width="100" height="450" alt="image" src="https://github.com/user-attachments/assets/260aeef3-b99e-4e08-928f-3dd355a74867" href="https://google.com" />
 
   
 Ссылка на google.com </h2>
