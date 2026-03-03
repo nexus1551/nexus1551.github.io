@@ -4,9 +4,9 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="35"/></h1>
 <h2 align="center">Студент Петровского колледжа и крутой пацык 🇷🇺 </h2>
 
-<h1> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a> 
+<h2> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a> 
 
-Моя жизнь и не только, переходи не пожалеешь :) </h1>
+Моя жизнь и не только, переходи не пожалеешь :) </h2>
 
 
 <h2> <a href="https://google.com" target="_blank">Google</a>
