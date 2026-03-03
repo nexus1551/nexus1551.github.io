@@ -22,3 +22,6 @@
 
 <div style="text-align: center;"><a href="http://neprivet.com" target="_blank">
 <img width="100" height="40" alt="image" src="https://github.com/user-attachments/assets/607245c5-83f8-4f5f-bcc2-1055b54536e4" /></a></div)
+<div style="text-align: center;"><a href="http://neprivet.com" 
+  <img src="https://github.com/user-attachments/assets/607245c5-83f8-4f5f-bcc2-1055b54536e4">
+</div></a>
