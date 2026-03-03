@@ -6,4 +6,4 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-!Это я в будущем(C:\Users\10240654\Downloads\test.jfif)
+<img src="C:\Users\10240654\Downloads\test.jfif" alt="Это я через 5 лет" title="Optional title">
