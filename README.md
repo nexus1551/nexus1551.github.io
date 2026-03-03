@@ -2,8 +2,7 @@
 
 <h1 align="center">Hi there, I'm <a href="https://t.me/nexuskid" target="_blank">Egor</a> 
 <img src="https://github.com/blackcater/blackcater/blob/main/images/social-wechat.svg" height="30"/></h1>
-<h2 align="center">Student of Petrovsky college 
-</h2><h4> 🇷🇺 </h4>
+<h2 align="center">Student of Petrovsky college 🇷🇺 </h2>
 
 <h1> <a href="https://google.com" target="_blank">Google</a>
   
