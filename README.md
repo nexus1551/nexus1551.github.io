@@ -1,12 +1,10 @@
 # *Тестовый сайт поставленный 03.03.2026 на (GitHub)*
 
 <h1> <a href="https://google.com" target="_blank">Google</a> </h1>
+
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> </h2>
+
 <h3> <a href="https://t.me/nexus1551" target="_blank">My TG-Chanel</a> </h3>
-
-[Мои работы](https://github.com/nexus1551/PetroStudying)
-
-[Мой телеграмм-канал](https://t.me/nexus1551)
 
 <h1 align="center">Hi there, I'm <a href="https://t.me/nexuskid" target="_blank">Egor</a> 
 <img src="https://github.com/blackcater/blackcater/blob/main/images/social-wechat.svg" height="30"/></h1>
