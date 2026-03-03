@@ -16,6 +16,6 @@
   Ссылка на google.com </h2>
 
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank"><i>My works</i></a>
-<img width="17" height="20" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
+<img width="22" height="20" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
   
 Это все мои работы собранные за всё время обучения в колледже</h2>
