@@ -5,8 +5,6 @@
 
 <h2 align="center">Студент Петровского колледжа и крутой пацан </h2>
 
-<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/607245c5-83f8-4f5f-bcc2-1055b54536e4" />
-
 <h2> <a href="https://t.me/nexus1551" target="_blank"> <i>My Telegram-Chanel </i></a>
 <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
 
@@ -21,3 +19,5 @@
 <img width="22" height="20" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
   
 Это все мои работы собранные за всё время обучения в колледже</h2>
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/607245c5-83f8-4f5f-bcc2-1055b54536e4" />
