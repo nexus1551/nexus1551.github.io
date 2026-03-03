@@ -2,6 +2,7 @@
 
 <h1> <a href="https://google.com" target="_blank">Google</a> </h1>
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> </h2>
+<h3> <a href="https://t.me/nexus1551" target="_blank">My TG-Chanel</a> </h3>
 
 [Мои работы](https://github.com/nexus1551/PetroStudying)
 
