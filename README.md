@@ -4,5 +4,5 @@
 
 [Мои работы](https://github.com/nexus1551/PetroStudying)
 
-[Мой телеграмм-канал](t.me/nexus1551)
+[Мой телеграмм-канал](https://t.me/nexus1551)
 
