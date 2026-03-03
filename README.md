@@ -6,7 +6,9 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-<div style="text-align: center;"> **Это я через 5 лет** </div>
+<h1 align="center">Hi there, I'm <a href="https://daniilshat.ru/" target="_blank">Daniil</a> 
+<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
+<h3 align="center">Computer science student, IT news writer from Russia 🇷🇺</h3>
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c423e748-8979-4785-a14b-33eade89814f" />
 
