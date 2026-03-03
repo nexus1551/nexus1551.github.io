@@ -16,5 +16,6 @@
 
 Моя жизнь и не только, переходи не пожалеешь :) </h3>
 
-< text-align: center img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/05c7dece-8a4c-400c-b192-be6e8a02cde0" />
+< <"center">< img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/05c7dece-8a4c-400c-b192-be6e8a02cde0"
+              margin auto/>
 
