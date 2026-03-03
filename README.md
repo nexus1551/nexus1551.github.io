@@ -3,5 +3,6 @@
 [google](https://google.com)
 
 [Мои работы](https://github.com/nexus1551/PetroStudying)
-рдр
+
+[Мой телеграмм-канал](t.me/nexus1551)
 
