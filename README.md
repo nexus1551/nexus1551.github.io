@@ -5,7 +5,8 @@
 
 <h2 align="center">Студент Петровского колледжа и крутой пацан </h2>
 
-<img width="1000" height="350" alt="image" src="https://github.com/user-attachments/assets/2a8735fe-9c53-48ba-a533-544c5cf389dd" />
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/23e26015-1a2a-4583-a52c-5054f339ce1a" />
+
 
 
 <h2> <a href="https://t.me/nexus1551" target="_blank"> <i>My Telegram-Chanel </i></a>
