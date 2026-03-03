@@ -6,11 +6,15 @@
 
 <h1> <a href="https://google.com" target="_blank">Google</a>
   
-бла-бла-бла</h1>
+Ссылка на google.com </h1>
 
-<h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> </h2>
+<h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> 
 
-<h3> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a> </h3>
+Это все мои работы собранные за всё время обучения в колледже</h2>
+
+<h3> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a> 
+
+Моя жизнь и не только, переходи не пожалеешь :) </h3>
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/05c7dece-8a4c-400c-b192-be6e8a02cde0" />
 
