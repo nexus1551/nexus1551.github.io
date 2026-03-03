@@ -6,13 +6,12 @@
 
 <h2> <p> <a href="https://t.me/nexus1551" target="_blank"> <i>My Telegram-Channel </i></a>
 <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
-  Моя жизнь и не только, переходи не пожалеешь :) </p></h2>
+  Моя жизнь и не только, переходи не пожалеешь :) </p>
 
-<h2><p> <a href="https://google.com" target="_blank"><i>Google</i></a>
+<p> <a href="https://google.com" target="_blank"><i>Google</i></a>
 <img width="40" height="17" alt="image" src="https://github.com/user-attachments/assets/260aeef3-b99e-4e08-928f-3dd355a74867" href="https://google.com" />
-  Ссылка на google.com </p></h2>
-
-<h2><p> <a href="https://github.com/nexus1551/PetroStudying" target="_blank"><i>My works</i></a>
+  Ссылка на google.com </p>
+<p> <a href="https://github.com/nexus1551/PetroStudying" target="_blank"><i>My works</i></a>
 <img width="22" height="20" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
   Это все мои работы собранные за всё время обучения в колледже</h2></p>
 
