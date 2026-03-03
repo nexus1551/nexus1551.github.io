@@ -10,17 +10,17 @@ body { background-color: var(--bg-color); color: var(--text-color); transition: 
 <h2> <a href="https://t.me/nexus1551" target="_blank"> <i>My Telegram-Channel </i></a>
 <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
 
-Моя жизнь и не только, переходи не пожалеешь :) </h2>
+<p>Моя жизнь и не только, переходи не пожалеешь :) </p></h2>
 
 <h2> <a href="https://google.com" target="_blank"><i>Google</i></a>
 <img width="40" height="17" alt="image" src="https://github.com/user-attachments/assets/260aeef3-b99e-4e08-928f-3dd355a74867" href="https://google.com" />
 
-  Ссылка на google.com </h2>
+  <p>Ссылка на google.com </p></h2>
 
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank"><i>My works</i></a>
 <img width="22" height="20" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
   
-Это все мои работы собранные за всё время обучения в колледже</h2>
+<p>Это все мои работы собранные за всё время обучения в колледже</h2></p>
 
 <div style="text-align: center;"><a href="http://neprivet.com" target="_blank">
 <img width="700" height="250" alt="тест" src="https://github.com/user-attachments/assets/dcd850be-7941-4dbd-8549-331b23fd461f" />
