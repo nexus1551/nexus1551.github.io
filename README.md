@@ -6,4 +6,6 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-(<img width="3000" height="5000" alt="image" src="https://github.com/user-attachments/assets/b86ebbe4-c3d3-4e12-a4af-ca2572f62b18" />)
+`Это я через 5 лет`
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c423e748-8979-4785-a14b-33eade89814f" />
+
