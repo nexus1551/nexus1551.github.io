@@ -6,8 +6,7 @@
 
 <h2> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a>
 <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
-
-Моя жизнь и не только, переходи не пожалеешь :) </h2>
+<h2> Моя жизнь и не только, переходи не пожалеешь :) </h2>
 
 <h2> <a href="https://google.com" target="_blank">Google</a>
 <img width="10" height="40" alt="image" src="https://github.com/user-attachments/assets/260aeef3-b99e-4e08-928f-3dd355a74867" href="https://google.com" />
