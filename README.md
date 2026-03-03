@@ -10,5 +10,6 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Student of Petrovsky college 🇷🇺</h3>
 
-<img width="1280" height="600" alt="image" src="https://github.com/user-attachments/assets/c423e748-8979-4785-a14b-33eade89814f" />
+<img width="128" height="72" alt="image" src="https://github.com/user-attachments/assets/d5f4c8c5-7e69-4a3f-917d-92a2a804fad7" />
+
 
