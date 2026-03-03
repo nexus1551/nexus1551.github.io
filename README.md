@@ -1,6 +1,7 @@
 # *Тестовый сайт поставленный 03.03.2026 на (GitHub)*
 
 <h1> <a href="https://google.com" target="_blank">Google</a> </h1>
+<h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> </h2>
 
 [Мои работы](https://github.com/nexus1551/PetroStudying)
 
