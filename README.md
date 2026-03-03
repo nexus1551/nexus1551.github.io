@@ -13,7 +13,7 @@
   Ссылка на google.com </p>
 <p> <a href="https://github.com/nexus1551/PetroStudying" target="_blank"><i>My works</i></a>
 <img width="22" height="20" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
-  Это все мои работы собранные за всё время обучения в колледже</h2></p>
+  Это все мои работы собранные за всё время обучения в колледже</p>
 
 <div style="text-align: center;"><a href="http://neprivet.com" target="_blank">
 <img width="700" height="250" alt="тест" src="https://github.com/user-attachments/assets/dcd850be-7941-4dbd-8549-331b23fd461f" />
