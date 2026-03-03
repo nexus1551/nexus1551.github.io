@@ -1,8 +1,8 @@
 # *Тестовый сайт поставленный 03.03.2026 на (GitHub)*
 
-<h1 align="center">Hi there, I'm <a href="https://t.me/nexuskid" target="_blank">Egor</a> 
+<h1 align="center">Всем салют! Я <a href="https://t.me/nexuskid" target="_blank">Егор</a> 
 <img src="https://github.com/blackcater/blackcater/blob/main/images/social-wechat.svg" height="30"/></h1>
-<h2 align="center">Student of Petrovsky college 🇷🇺 </h2>
+<h2 align="center">Студент Петровского колледжа и крутой пацык 🇷🇺 </h2>
 
 <h2> <a href="https://google.com" target="_blank">Google</a>
   
