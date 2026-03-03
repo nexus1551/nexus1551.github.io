@@ -1,4 +1,4 @@
-<h1> Тестовый сайт поставленный 03.03.2026 на (GitHub) </h1>
+<h1> <i>Тестовый сайт поставленный 03.03.2026 на (GitHub)<i> </h1>
 
 <h1 align="center">Всем салют! Я <a href="https://t.me/nexuskid" target="_blank">Егор</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="35"/></h1>
