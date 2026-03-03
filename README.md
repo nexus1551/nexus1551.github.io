@@ -21,4 +21,4 @@
 Это все мои работы собранные за всё время обучения в колледже</h2>
 
 <div style="text-align: center;"><a href="http://neprivet.com" target="_blank">
-<img width="100" height="40" alt="image" src="https://github.com/user-attachments/assets/607245c5-83f8-4f5f-bcc2-1055b54536e4" /></a>
+<img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/607245c5-83f8-4f5f-bcc2-1055b54536e4" /></a>
