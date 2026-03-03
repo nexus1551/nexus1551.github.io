@@ -5,17 +5,17 @@
 
 <h2 align="center">Студент Петровского колледжа и крутой пацык 🇷🇺 </h2>
 
-<h2> <a href="https://t.me/nexus1551" target="_blank">My Telegram-Chanel</a>
+<h2> <a href="https://t.me/nexus1551" target="_blank"> <b>My Telegram-Chanel </b></a>
 <img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/69f1dc4b-5350-46c4-bf16-e07de22a3526" />
 
 Моя жизнь и не только, переходи не пожалеешь :) </h2>
 
-<h2> <a href="https://google.com" target="_blank">Google</a>
+<h2> <a href="https://google.com" target="_blank"><b>Google</b>></a>
 <img width="40" height="17" alt="image" src="https://github.com/user-attachments/assets/260aeef3-b99e-4e08-928f-3dd355a74867" href="https://google.com" />
 
   Ссылка на google.com </h2>
 
-<h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a>
+<h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank"><b>My works</b></a>
 <img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/984fb03a-acb3-437f-8df1-21524fa1a552" />
   
 Это все мои работы собранные за всё время обучения в колледже</h2>
