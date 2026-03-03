@@ -6,7 +6,7 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-<h1 align="center">Hi there, I'm <a href="(https://t.me/nexuskid)" target="_blank">Egor</a> 
+<h1 align="center">Hi there, I'm <a href="(https://t.me/nexuskid)" target="_blank">Daniil</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Student of Petrovsky college 🇷🇺</h3>
 
