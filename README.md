@@ -5,4 +5,5 @@
 [Мои работы](https://github.com/nexus1551/PetroStudying)
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
-tes
+
+!Это я в будущем(C:\Users\10240654\Downloads\test.jfif)
