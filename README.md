@@ -6,6 +6,6 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-<center> **Это я через 5 лет** </center>Это я через 5 лет
+<center>**Это я через 5 лет**</center>
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c423e748-8979-4785-a14b-33eade89814f" />
 
