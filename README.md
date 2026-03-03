@@ -6,7 +6,7 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-<div style="text-align: center;"> Это я через 5 лет </div>
+<div style="text-align: center;"> **Это я через 5 лет** </div>
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c423e748-8979-4785-a14b-33eade89814f" />
 
