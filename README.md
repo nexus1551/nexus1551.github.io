@@ -1,6 +1,6 @@
 # *Тестовый сайт поставленный 03.03.2026 на (GitHub)*
 
-<a href="https://google.com" target="_blank">Google</a>
+<h1> <a href="https://google.com" target="_blank">Google</a>
 
 [google](https://google.com)
 
