@@ -5,6 +5,7 @@
 <h3 align="center">Student of Petrovsky college 🇷🇺</h3>
 
 <h1> <a href="https://google.com" target="_blank">Google</a>
+  
 бла-бла-бла</h1>
 
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> </h2>
