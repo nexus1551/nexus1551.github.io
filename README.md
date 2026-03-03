@@ -1,3 +1,5 @@
+body { background-color: var(--bg-color); color: var(--text-color); transition: background-color 0.3s, color 0.3s; }
+
 <h1> <i> Тестовый сайт поставленный 03.03.2026 на (GitHub) </i> </h1>
 
 <h1 align="center">Всем салют! Я <a href="https://t.me/nexuskid" target="_blank">Егор</a> 
