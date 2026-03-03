@@ -1,7 +1,7 @@
 <h1> <i> Тестовый сайт поставленный 03.03.2026 на (GitHub) </i>
 
-<h1 align="center">Всем салют! Я <a href="https://t.me/nexuskid" target="_blank">Егор</a> </h1>
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="35"/>
+<h1 align="center">Всем салют! Я <a href="https://t.me/nexuskid" target="_blank">Егор</a>
+<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="35"/></h1>
    <h2 align="center"> Студент Петровского колледжа и крутой пацан</h2>
 
 <h2> <p> <a href="https://t.me/nexus1551" target="_blank"> <i>My Telegram-Channel </i></a>
