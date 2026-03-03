@@ -4,9 +4,9 @@
 <img src="https://github.com/blackcater/blackcater/blob/main/images/social-wechat.svg" height="30"/></h1>
 <h2 align="center">Student of Petrovsky college 🇷🇺 </h2>
 
-<h1> <a href="https://google.com" target="_blank">Google</a>
+<h2> <a href="https://google.com" target="_blank">Google</a>
   
-Ссылка на google.com </h1>
+Ссылка на google.com </h2>
 
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> 
 
