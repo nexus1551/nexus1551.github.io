@@ -6,9 +6,9 @@
 
 [Мой телеграмм-канал](https://t.me/nexus1551)
 
-<h1 align="center">Hi there, I'm <a href="https://daniilshat.ru/" target="_blank">Daniil</a> 
+<h1 align="center">Hi there, I'm <a href="(https://web.telegram.org/a/#1332301350)" target="_blank">Egor</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">Computer science student, IT news writer from Russia 🇷🇺</h3>
+<h3 align="center">Student of Petrovsky college 🇷🇺</h3>
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c423e748-8979-4785-a14b-33eade89814f" />
 
