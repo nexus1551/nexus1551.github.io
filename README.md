@@ -4,7 +4,7 @@
 
 <h2> <a href="https://github.com/nexus1551/PetroStudying" target="_blank">My works</a> </h2>
 
-<h3> <a href="https://t.me/nexus1551" target="_blank">My TG-Chanel</a> </h3>
+<h3> <a href="https://t.me/nexus1551" target="_blank">My Telegramm-Chanel</a> </h3>
 
 <h1 align="center">Hi there, I'm <a href="https://t.me/nexuskid" target="_blank">Egor</a> 
 <img src="https://github.com/blackcater/blackcater/blob/main/images/social-wechat.svg" height="30"/></h1>
