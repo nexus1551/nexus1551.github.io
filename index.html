@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт nexus</title>
+    <title>Nexus — Главная</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes lineGrow {
+            from { height: 0; }
+            to { height: 100%; }
         }
 
         body {
@@ -27,22 +37,33 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #222;
             padding-bottom: 20px;
+            animation: fadeIn 0.8s ease forwards;
         }
 
         .tag {
             font-size: 0.9rem;
             letter-spacing: 2px;
-            color: #888;
+            color: #666;
+        }
+
+        .layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto 0;
+            gap: 40px;
         }
 
         main {
-            margin: 60px 0;
+            max-width: 70%;
+            animation: fadeIn 1s ease 0.2s forwards;
+            opacity: 0;
         }
 
         h1 {
-            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-size: clamp(2.2rem, 5vw, 4.5rem);
             font-weight: 900;
             text-transform: uppercase;
             line-height: 1.1;
@@ -59,6 +80,16 @@
         .nickname span {
             color: #fff;
             border-bottom: 2px solid #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .nickname span:hover {
+            transform: skewX(-10deg);
+            text-shadow: 2px 2px #ff0000, -2px -2px #0000ff; /* Эффект анаглиф-глитча при наведении */
+            background: #fff;
+            color: #000;
         }
 
         .bio-section {
@@ -69,6 +100,7 @@
             border-left: 2px solid #fff;
             padding-left: 20px;
             margin-bottom: 40px;
+            position: relative;
         }
 
         .cta-container {
@@ -76,7 +108,6 @@
             flex-direction: column;
             gap: 20px;
             align-items: flex-start;
-            margin-bottom: 40px;
         }
 
         .college-link {
@@ -88,68 +119,137 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            border: 1px solid #fff;
         }
 
         .college-link:hover {
             background-color: #000;
             color: #fff;
-            outline: 1px solid #fff;
+            transform: translateX(5px);
         }
 
         .social-links {
             display: flex;
             gap: 20px;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         .social-link {
-            color: #888;
+            color: #666;
             text-decoration: none;
             text-transform: uppercase;
-            transition: color 0.2s ease, border-color 0.2s ease;
-            border-bottom: 1px dashed transparent;
+            transition: color 0.3s ease;
         }
 
         .social-link:hover {
             color: #fff;
-            border-bottom-color: #fff;
+        }
+
+        /* Правое вертикальное навигационное меню */
+        .side-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-end;
+            border-left: 1px solid #222;
+            padding-left: 30px;
+            animation: fadeIn 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .nav-item {
+            font-size: 1.2rem;
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            right: 0;
+            background-color: #fff;
+            transition: width 0.3s ease;
+        }
+
+        .nav-item.active, .nav-item:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .nav-item:hover::after {
+            width: 100%;
         }
 
         footer {
-            border-top: 1px solid #333;
+            border-top: 1px solid #222;
             padding-top: 20px;
             font-size: 0.8rem;
-            color: #666;
+            color: #444;
             display: flex;
             justify-content: space-between;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            main { max-width: 100%; }
+            .side-nav {
+                flex-direction: row;
+                align-items: center;
+                border-left: none;
+                border-top: 1px solid #222;
+                padding-left: 0;
+                padding-top: 20px;
+                width: 100%;
+                justify-content: space-between;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="tag">Первый раз на бите</div>
-        <div class="tag">ZAVOZ channel</div>
+        <div class="tag">ID: 01 // PORTFOLIO</div>
+        <div class="tag">INDEX_PAGE //</div>
     </header>
 
-    <main>
-        <h1>Егор Фролов Денисович</h1>
-        <div class="nickname">nickname: <span>nexus</span></div>
-        
-        <div class="bio-section">
-            <p>Учусь в Петрошараге, Сис Админ 54-11. Кто хочет подходите лол</p>
-        </div>
-
-        <div class="cta-container">
-            <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
+    <div class="layout">
+        <main>
+            <h1>Егор Фролов Денисович</h1>
+            <div class="nickname">nickname: <span>nexus</span></div>
             
-            <div class="social-links">
-                <a href="https://t.me" class="social-link" target="_blank">Telegram // @nexus_zavoz</a>
-                <a href="https://tiktok.com" class="social-link" target="_blank">TikTok // @nexus_zavoz</a>
+            <div class="bio-section">
+                <p>Сфера интересов: технологии, киберпространство и развитие. Базируюсь в Санкт-Петербурге. Получаю профильное образование, формирую цифровой опыт.</p>
             </div>
-        </div>
-    </main>
+
+            <div class="cta-container">
+                <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
+                
+                <div class="social-links">
+                    <a href="https://t.me" class="social-link" target="_blank">TG // @nexus_zavoz</a>
+                    <a href="https://tiktok.com" class="social-link" target="_blank">TT // @nexus_zavoz</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Боковое меню с анимацией -->
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item active">01 // ГЛАВНАЯ</a>
+            <a href="games.html" class="nav-item">02 // ИГРЫ</a>
+            <a href="#" class="nav-item" style="opacity: 0.3; cursor: not-allowed;">03 // СКОРО</a>
+        </nav>
+    </div>
 
     <footer>
         <div>© 2026 NEXUS</div>
