@@ -100,12 +100,16 @@
         .cta-container {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 25px;
             align-items: flex-start;
+            width: 100%;
+            max-width: 400px; /* Ограничение ширины для аккуратного выравнивания строк */
         }
 
         .college-link {
             display: inline-block;
+            width: 100%;
+            text-align: center;
             padding: 15px 30px;
             background-color: #fff;
             color: #000;
@@ -123,28 +127,26 @@
             transform: translateX(5px);
         }
 
-        /* Увеличенный и усиленный блок соцсетей */
+        /* Блок ссылок в две строчки */
         .social-box {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-top: 10px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
+            width: 100%;
         }
 
         .social-link {
-            font-size: 1.3rem; /* Увеличенный размер */
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
             font-weight: bold;
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             border: 1px solid #333;
-            padding: 10px 20px;
+            padding: 15px 20px;
+            letter-spacing: 1px;
             transition: all 0.3s ease;
         }
 
@@ -152,14 +154,15 @@
             background-color: #fff;
             color: #000;
             border-color: #fff;
+            transform: translateX(5px);
         }
 
-        /* Новый блок сотрудничества */
+        /* Блок сотрудничества */
         .collab-box {
-            margin-top: 20px;
+            width: 100%;
+            margin-top: 15px;
             border-top: 1px dashed #333;
             padding-top: 25px;
-            width: 100%;
         }
 
         .collab-label {
@@ -171,7 +174,7 @@
         }
 
         .collab-email {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #fff;
             text-decoration: none;
             font-weight: bold;
@@ -257,18 +260,16 @@
             <div class="nickname">nickname: <span>nexus</span></div>
             
             <div class="bio-section">
-                <p>Сфера интересов: технологии, киберпространство и развитие. Базируюсь в Санкт-Петербурге. Получаю профильное образование, формирую цифровой опыт.</p>
+                <p>Сфера интересов: technologies, киберпространство и развитие. Базируюсь в Санкт-Петербурге. Получаю профильное образование, формирую цифровой опыт.</p>
             </div>
 
             <div class="cta-container">
                 <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
                 
-                <!-- Увеличенные соцсети -->
+                <!-- Соцсети строго в две строчки с анимацией сдвига -->
                 <div class="social-box">
-                    <div class="social-links">
-                        <a href="https://t.me" class="social-link" target="_blank">Telegram</a>
-                        <a href="https://tiktok.com" class="social-link" target="_blank">TikTok</a>
-                    </div>
+                    <a href="https://tiktok.com" class="social-link" target="_blank">Tik Tok</a>
+                    <a href="https://t.me" class="social-link" target="_blank">Telegram Channel</a>
                 </div>
 
                 <!-- Блок Сотрудничество -->
