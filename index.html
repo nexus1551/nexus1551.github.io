@@ -11,11 +11,6 @@
             box-sizing: border-box;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         body {
             background-color: #000000;
             color: #ffffff;
@@ -23,9 +18,31 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #dust-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .wrapper {
+            position: relative;
+            z-index: 2;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             justify-content: space-between;
             padding: 40px;
-            overflow-x: hidden;
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         header {
@@ -34,7 +51,6 @@
             align-items: center;
             border-bottom: 1px solid #222;
             padding-bottom: 20px;
-            animation: fadeIn 0.8s ease forwards;
         }
 
         .tag {
@@ -44,21 +60,20 @@
         }
 
         .layout {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 60px;
             align-items: center;
-            margin: auto 0;
-            gap: 40px;
+            margin: 60px 0;
         }
 
         main {
-            max-width: 70%;
-            animation: fadeIn 1s ease 0.2s forwards;
-            opacity: 0;
+            max-width: 650px;
+            width: 100%;
         }
 
         h1 {
-            font-size: clamp(2.2rem, 5vw, 4.5rem);
+            font-size: clamp(2rem, 4.5vw, 4rem);
             font-weight: 900;
             text-transform: uppercase;
             line-height: 1.1;
@@ -67,29 +82,26 @@
         }
 
         .nickname {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #aaa;
             margin-bottom: 40px;
         }
 
         .nickname span {
             color: #fff;
-            font-weight: normal;
             border-bottom: 2px solid #fff;
             cursor: pointer;
             display: inline-block;
-            transition: font-weight 0.2s ease, letter-spacing 0.2s ease, color 0.2s ease;
+            transition: font-weight 0.2s ease, letter-spacing 0.2s ease;
         }
 
         .nickname span:hover {
             font-weight: 900;
-            letter-spacing: 3px;
-            color: #ffffff;
+            letter-spacing: 2px;
         }
 
         .bio-section {
-            max-width: 600px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 1.6;
             color: #fff;
             border-left: 2px solid #fff;
@@ -102,25 +114,24 @@
         .cta-container {
             display: flex;
             flex-direction: column;
-            gap: 25px;
-            align-items: flex-start;
+            gap: 15px;
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
         }
 
         .college-link {
-            display: inline-block;
+            display: block;
             width: 100%;
             text-align: center;
-            padding: 15px 30px;
+            padding: 16px;
             background-color: #fff;
             color: #000;
             text-decoration: none;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
             border: 1px solid #fff;
+            transition: all 0.3s ease;
         }
 
         .college-link:hover {
@@ -129,25 +140,19 @@
             transform: translateX(5px);
         }
 
-        .social-box {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-        }
-
         .social-link {
             display: block;
             width: 100%;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             border: 1px solid #333;
-            padding: 15px 20px;
+            padding: 15px;
             letter-spacing: 1px;
+            background-color: rgba(0,0,0,0.7);
             transition: all 0.3s ease;
         }
 
@@ -159,10 +164,10 @@
         }
 
         .collab-box {
-            width: 100%;
             margin-top: 15px;
             border-top: 1px dashed #333;
-            padding-top: 25px;
+            padding-top: 20px;
+            width: 100%;
         }
 
         .collab-label {
@@ -170,7 +175,7 @@
             color: #666;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .collab-email {
@@ -179,32 +184,30 @@
             text-decoration: none;
             font-weight: bold;
             transition: color 0.2s ease;
-            display: inline-block;
         }
 
         .collab-email:hover {
-            color: #888;
+            color: #aaa;
         }
 
         .side-nav {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 25px;
             align-items: flex-end;
             border-left: 1px solid #222;
             padding-left: 30px;
-            animation: fadeIn 1s ease 0.4s forwards;
-            opacity: 0;
         }
 
         .nav-item {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #444;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 2px;
             transition: all 0.3s ease;
             position: relative;
+            white-space: nowrap;
         }
 
         .nav-item::after {
@@ -237,58 +240,114 @@
         }
 
         @media (max-width: 768px) {
-            .layout { flex-direction: column; align-items: flex-start; }
-            main { max-width: 100%; }
+            .wrapper { padding: 20px; }
+            .layout { grid-template-columns: 1fr; gap: 40px; margin: 40px 0; }
             .side-nav {
-                flex-direction: row; align-items: center; border-left: none;
-                border-top: 1px solid #222; padding-left: 0; padding-top: 20px;
-                width: 100%; justify-content: space-between; margin-top: 30px;
+                align-items: flex-start;
+                border-left: none;
+                border-top: 1px solid #222;
+                padding-left: 0;
+                padding-top: 20px;
+                width: 100%;
             }
+            .nav-item::after { left: 0; right: auto; }
+            .nav-item.active, .nav-item:hover { transform: translateX(5px); }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="tag">ID: 01 // PORTFOLIO</div>
-        <div class="tag">INDEX_PAGE //</div>
-    </header>
+    <canvas id="dust-canvas"></canvas>
 
-    <div class="layout">
-        <main>
-            <h1>Егор Фролов Денисович</h1>
-            <div class="nickname">nickname: <span>nexus</span></div>
-            
-            <div class="bio-section">
-                <p>Учусь в Петрошараге.<br>СисАдмин из группы 54-11.</p>
-            </div>
+    <div class="wrapper">
+        <header>
+            <div class="tag">ID: 01 // PORTFOLIO</div>
+            <div class="tag">INDEX_PAGE //</div>
+        </header>
 
-            <div class="cta-container">
-                <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
+        <div class="layout">
+            <main>
+                <h1>Егор Фролов Денисович</h1>
+                <div class="nickname">nickname: <span>nexus</span></div>
                 
-                <div class="social-box">
+                <div class="bio-section">
+                    <p>Учусь в Петрошараге.<br>СисАдмин из группы 54-11.</p>
+                </div>
+
+                <div class="cta-container">
+                    <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
                     <a href="https://tiktok.com" class="social-link" target="_blank">Tik Tok</a>
                     <a href="https://t.me" class="social-link" target="_blank">Telegram Channel</a>
-                </div>
 
-                <div class="collab-box">
-                    <div class="collab-label">// по вопросам сотрудничества</div>
-                    <a href="mailto:egoriknexus@gmail.com" class="collab-email">egoriknexus@gmail.com</a>
+                    <div class="collab-box">
+                        <div class="collab-label">// по вопросам сотрудничества</div>
+                        <a href="mailto:egoriknexus@gmail.com" class="collab-email">egoriknexus@gmail.com</a>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <nav class="side-nav">
-            <a href="index.html" class="nav-item active">01 // ГЛАВНАЯ</a>
-            <a href="games.html" class="nav-item">02 // ИГРОВОЙ АВТОМАТ</a>
-            <a href="shows.html" class="nav-item">03 // СЕРИАЛЫ</a>
-        </nav>
+            <nav class="side-nav">
+                <a href="index.html" class="nav-item active">01 // ГЛАВНАЯ</a>
+                <a href="games.html" class="nav-item">02 // ИГРОВОЙ АВТОМАТ</a>
+                <a href="shows.html" class="nav-item">03 // СЕРИАЛЫ</a>
+            </nav>
+        </div>
+
+        <footer>
+            <div>© 2026 NEXUS</div>
+            <div>ST. PETERSBURG</div>
+        </footer>
     </div>
 
-    <footer>
-        <div>© 2026 NEXUS</div>
-        <div>ST. PETERSBURG</div>
-    </footer>
+    <script>
+        const canvas = document.getElementById('dust-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray = [];
+        const numberOfParticles = 45;
 
-</body>
-</html>
+        function setCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        setCanvasSize();
+        window.addEventListener('resize', setCanvasSize);
+
+        class Particle {
+            constructor() {
+                this.reset();
+                this.y = Math.random() * canvas.height;
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = 0;
+                this.size = Math.random() * 1.5 + 0.5;
+                this.speedX = Math.random() * 0.4 - 0.2;
+                this.speedY = Math.random() * 0.3 + 0.1;
+                this.opacity = Math.random() * 0.4 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.y > canvas.height || this.x > canvas.width || this.x < 0) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+Используйте код с осторожностью.particlesArray[i].update();particlesArray[i].draw();}requestAnimationFrame(animate);}init();animate();
