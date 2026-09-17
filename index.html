@@ -72,7 +72,6 @@
             margin-bottom: 40px;
         }
 
-        /* Обновленный чистый и стильный эффект для никнейма */
         .nickname span {
             color: #fff;
             font-weight: normal;
@@ -101,7 +100,7 @@
         .cta-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 30px;
             align-items: flex-start;
         }
 
@@ -124,21 +123,64 @@
             transform: translateX(5px);
         }
 
+        /* Увеличенный и усиленный блок соцсетей */
+        .social-box {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
         .social-links {
             display: flex;
-            gap: 20px;
-            font-size: 0.9rem;
+            gap: 25px;
+            flex-wrap: wrap;
         }
 
         .social-link {
-            color: #666;
+            font-size: 1.3rem; /* Увеличенный размер */
+            font-weight: bold;
+            color: #fff;
             text-decoration: none;
             text-transform: uppercase;
-            transition: color 0.3s ease;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
         }
 
         .social-link:hover {
+            background-color: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        /* Новый блок сотрудничества */
+        .collab-box {
+            margin-top: 20px;
+            border-top: 1px dashed #333;
+            padding-top: 25px;
+            width: 100%;
+        }
+
+        .collab-label {
+            font-size: 0.8rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .collab-email {
+            font-size: 1.2rem;
             color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease;
+            display: inline-block;
+        }
+
+        .collab-email:hover {
+            color: #888;
         }
 
         .side-nav {
@@ -197,7 +239,7 @@
             .side-nav {
                 flex-direction: row; align-items: center; border-left: none;
                 border-top: 1px solid #222; padding-left: 0; padding-top: 20px;
-                width: 100%; justify-content: space-between; margin-top: 20px;
+                width: 100%; justify-content: space-between; margin-top: 30px;
             }
         }
     </style>
@@ -221,9 +263,18 @@
             <div class="cta-container">
                 <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
                 
-                <div class="social-links">
-                    <a href="https://t.me" class="social-link" target="_blank">TG // @nexus_zavoz</a>
-                    <a href="https://tiktok.com" class="social-link" target="_blank">TT // @nexus_zavoz</a>
+                <!-- Увеличенные соцсети -->
+                <div class="social-box">
+                    <div class="social-links">
+                        <a href="https://t.me" class="social-link" target="_blank">Telegram</a>
+                        <a href="https://tiktok.com" class="social-link" target="_blank">TikTok</a>
+                    </div>
+                </div>
+
+                <!-- Блок Сотрудничество -->
+                <div class="collab-box">
+                    <div class="collab-label">// по вопросам сотрудничества</div>
+                    <a href="mailto:egoriknexus@gmail.com" class="collab-email">egoriknexus@gmail.com</a>
                 </div>
             </div>
         </main>
