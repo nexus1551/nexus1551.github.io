@@ -74,6 +74,7 @@
             width: 100%;
         }
 
+        /* Карточки теперь ссылки */
         .game-card {
             border: 1px solid #333;
             padding: 25px;
@@ -81,6 +82,8 @@
             flex-direction: column;
             justify-content: space-between;
             min-height: 180px;
+            text-decoration: none;
+            color: #ffffff;
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -187,29 +190,32 @@
             <h1>ИГРОВОЙ АВТОМАТ</h1>
             
             <div class="games-grid">
-                <div class="game-card">
+                <!-- Карточка Dota 2 (Протокол Steam + запасной переход на браузер) -->
+                <a href="steam://store/570" onclick="setTimeout(function(){ window.location.href='https://steampowered.com'; }, 500);" class="game-card">
                     <div class="game-number">// 01</div>
                     <div>
                         <div class="game-title">Dota 2</div>
-                        <div class="game-desc">Стратегия, координация и анализ макро-позиций на карте.</div>
+                        <div class="game-desc">Запустить в Steam или открыть страницу в магазине. Стратегия и макро-контроль.</div>
                     </div>
-                </div>
+                </a>
 
-                <div class="game-card">
+                <!-- Карточка CS2 (Протокол Steam + запасной переход на браузер) -->
+                <a href="steam://store/730" onclick="setTimeout(function(){ window.location.href='https://steampowered.com'; }, 500);" class="game-card">
                     <div class="game-number">// 02</div>
                     <div>
                         <div class="game-title">CS2</div>
-                        <div class="game-desc">Четкие тайминги, жесткий аим и контроль секторов.</div>
+                        <div class="game-desc">Запустить в Steam или открыть страницу в магазине. Жесткий аим и контроль секторов.</div>
                     </div>
-                </div>
+                </a>
 
-                <div class="game-card">
+                <!-- Карточка Roblox -->
+                <a href="https://roblox.com" target="_blank" class="game-card">
                     <div class="game-number">// 03</div>
                     <div>
                         <div class="game-title">Roblox</div>
-                        <div class="game-desc">Пространство для кастомных режимов, фана и креатива.</div>
+                        <div class="game-desc">Открыть официальный сайт. Пространство для кастомных режимов и фана.</div>
                     </div>
-                </div>
+                </a>
             </div>
         </main>
 
