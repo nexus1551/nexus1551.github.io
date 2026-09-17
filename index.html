@@ -11,7 +11,6 @@
             box-sizing: border-box;
         }
 
-        /* Возвращаем анимации плавного появления */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -67,7 +66,6 @@
             color: #666;
         }
 
-        /* Единая флекс-структура расположения меню как на Shows */
         .layout {
             display: flex;
             justify-content: space-between;
@@ -75,6 +73,7 @@
             width: 100%;
             margin: 60px 0;
             gap: 50px;
+            position: relative;
         }
 
         main {
@@ -101,7 +100,6 @@
             margin-bottom: 40px;
         }
 
-        /* Возвращаем крутой интерактивный глитч-эффект */
         .nickname span {
             color: #fff;
             border-bottom: 2px solid #fff;
@@ -206,7 +204,7 @@
             color: #aaa;
         }
 
-        /* Выравнивание меню переведено в стандартный липкий флекс-блок (как на Shows) */
+        /* Меню зафиксировано пониже и выровнено идеально по пикселям во всех файлах */
         .side-nav {
             flex: 0 0 auto;
             display: flex;
@@ -215,8 +213,7 @@
             align-items: flex-end;
             border-left: 1px solid #222;
             padding-left: 30px;
-            position: sticky;
-            top: 40px;
+            margin-top: 180px; /* Сдвигает список пониже */
             animation: fadeIn 1s ease 0.4s forwards;
             opacity: 0;
         }
@@ -273,7 +270,7 @@
                 padding-left: 0;
                 padding-top: 20px;
                 width: 100%;
-                position: static;
+                margin-top: 0;
             }
             .nav-item::after { left: 0; right: auto; }
             .nav-item.active, .nav-item:hover { transform: translateX(5px); }
