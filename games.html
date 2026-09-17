@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus — Игры</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            padding-bottom: 20px;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .tag {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #666;
+        }
+
+        .layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 60px 0;
+            gap: 40px;
+            width: 100%;
+        }
+
+        main {
+            max-width: 70%;
+            width: 100%;
+            animation: fadeIn 1s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        /* Сетка игровых карточек */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+        .game-card {
+            border: 1px solid #333;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 180px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .game-card:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            transform: translateY(-5px);
+        }
+
+        .game-number {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .game-card:hover .game-number {
+            color: #888;
+        }
+
+        .game-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .game-desc {
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.4;
+        }
+
+        .game-card:hover .game-desc {
+            color: #333;
+        }
+
+        /* Правое вертикальное навигационное меню */
+        .side-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-end;
+            border-left: 1px solid #222;
+            padding-left: 30px;
+            position: sticky;
+            top: 40px;
+            animation: fadeIn 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .nav-item {
+            font-size: 1.2rem;
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            right: 0;
+            background-color: #fff;
+            transition: width 0.3s ease;
+        }
+
+        .nav-item.active, .nav-item:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .nav-item:hover::after {
+            width: 100%;
+        }
+
+        footer {
+            border-top: 1px solid #222;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+            }
+            main { max-width: 100%; }
+            .side-nav {
+                flex-direction: row;
+                align-items: center;
+                border-left: none;
+                border-top: 1px solid #222;
+                padding-left: 0;
+                padding-top: 20px;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="tag">ID: 01 // PORTFOLIO</div>
+        <div class="tag">GAMES_PAGE //</div>
+    </header>
+
+    <div class="layout">
+        <main>
+            <h1>ИГРОВАЯ ЗОНА</h1>
+            
+            <div class="games-grid">
+                <!-- Игра 1 -->
+                <div class="game-card">
+                    <div class="game-number">// 01</div>
+                    <div>
+                        <div class="game-title">Counter-Strike 2</div>
+                        <div class="game-desc">Тактический шутер. Тренировка реакции и командных таймингов.</div>
+                    </div>
+                </div>
+
+                <!-- Игра 2 -->
+                <div class="game-card">
+                    <div class="game-number">// 02</div>
+                    <div>
+                        <div class="game-title">Dota 2</div>
+                        <div class="game-desc">Стратегическое мышление, макро-контроль и выдержка.</div>
+                    </div>
+                </div>
+
+                <!-- Игра 3 -->
+                <div class="game-card">
+                    <div class="game-number">// 03</div>
+                    <div>
+                        <div class="game-title">Cyberpunk 2077</div>
+                        <div class="game-desc">Погружение в визуальную атмосферу идеального темного будущего.</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Боковое меню -->
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item">01 // ГЛАВНАЯ</a>
+            <a href="games.html" class="nav-item active">02 // ИГРЫ</a>
+            <a href="#" class="nav-item" style="opacity: 0.3; cursor: not-allowed;">03 // СКОРО</a>
+        </nav>
+    </div>
+
+    <footer>
+        <div>© 2026 NEXUS</div>
+        <div>ST. PETERSBURG</div>
+    </footer>
+
+</body>
+</html>
