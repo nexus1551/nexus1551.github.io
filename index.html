@@ -16,11 +16,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        @keyframes lineGrow {
-            from { height: 0; }
-            to { height: 100%; }
-        }
-
         body {
             background-color: #000000;
             color: #ffffff;
@@ -77,19 +72,20 @@
             margin-bottom: 40px;
         }
 
+        /* Обновленный чистый и стильный эффект для никнейма */
         .nickname span {
             color: #fff;
+            font-weight: normal;
             border-bottom: 2px solid #fff;
             cursor: pointer;
-            transition: all 0.3s ease;
             display: inline-block;
+            transition: font-weight 0.2s ease, letter-spacing 0.2s ease, color 0.2s ease;
         }
 
         .nickname span:hover {
-            transform: skewX(-10deg);
-            text-shadow: 2px 2px #ff0000, -2px -2px #0000ff; /* Эффект анаглиф-глитча при наведении */
-            background: #fff;
-            color: #000;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #ffffff;
         }
 
         .bio-section {
@@ -100,7 +96,6 @@
             border-left: 2px solid #fff;
             padding-left: 20px;
             margin-bottom: 40px;
-            position: relative;
         }
 
         .cta-container {
@@ -146,7 +141,6 @@
             color: #fff;
         }
 
-        /* Правое вертикальное навигационное меню */
         .side-nav {
             display: flex;
             flex-direction: column;
@@ -195,24 +189,15 @@
             color: #444;
             display: flex;
             justify-content: space-between;
-            animation: fadeIn 0.8s ease forwards;
         }
 
         @media (max-width: 768px) {
-            .layout {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            .layout { flex-direction: column; align-items: flex-start; }
             main { max-width: 100%; }
             .side-nav {
-                flex-direction: row;
-                align-items: center;
-                border-left: none;
-                border-top: 1px solid #222;
-                padding-left: 0;
-                padding-top: 20px;
-                width: 100%;
-                justify-content: space-between;
+                flex-direction: row; align-items: center; border-left: none;
+                border-top: 1px solid #222; padding-left: 0; padding-top: 20px;
+                width: 100%; justify-content: space-between; margin-top: 20px;
             }
         }
     </style>
@@ -243,11 +228,10 @@
             </div>
         </main>
 
-        <!-- Боковое меню с анимацией -->
         <nav class="side-nav">
             <a href="index.html" class="nav-item active">01 // ГЛАВНАЯ</a>
-            <a href="games.html" class="nav-item">02 // ИГРЫ</a>
-            <a href="#" class="nav-item" style="opacity: 0.3; cursor: not-allowed;">03 // СКОРО</a>
+            <a href="games.html" class="nav-item">02 // ИГРОВОЙ АВТОМАТ</a>
+            <a href="shows.html" class="nav-item">03 // СЕРИАЛЫ</a>
         </nav>
     </div>
 
