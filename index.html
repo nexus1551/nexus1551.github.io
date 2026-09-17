@@ -71,9 +71,16 @@
             margin-bottom: 40px;
         }
 
+        .cta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
         .college-link {
             display: inline-block;
-            margin-top: 20px;
             padding: 15px 30px;
             background-color: #fff;
             color: #000;
@@ -88,6 +95,25 @@
             background-color: #000;
             color: #fff;
             outline: 1px solid #fff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            font-size: 1rem;
+        }
+
+        .social-link {
+            color: #888;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: color 0.2s ease, border-color 0.2s ease;
+            border-bottom: 1px dashed transparent;
+        }
+
+        .social-link:hover {
+            color: #fff;
+            border-bottom-color: #fff;
         }
 
         footer {
@@ -115,7 +141,14 @@
             <p>Сфера интересов: технологии, киберпространство и развитие. Базируюсь в Санкт-Петербурге. Получаю профильное образование, формирую цифровой опыт.</p>
         </div>
 
-        <a href="https://petrocollege.ru/" class="college-link" target="_blank">здесь обитаю</a>
+        <div class="cta-container">
+            <a href="https://petrocollege.ru" class="college-link" target="_blank">здесь обитаю</a>
+            
+            <div class="social-links">
+                <a href="https://t.me" class="social-link" target="_blank">Telegram // @nexus_zavoz</a>
+                <a href="https://tiktok.com" class="social-link" target="_blank">TikTok // @nexus_zavoz</a>
+            </div>
+        </div>
     </main>
 
     <footer>
