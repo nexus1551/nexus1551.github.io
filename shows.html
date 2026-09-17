@@ -26,6 +26,22 @@
             justify-content: space-between;
             padding: 40px;
             overflow-x: hidden;
+            position: relative;
+        }
+
+        #dust-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        header, .layout, footer {
+            position: relative;
+            z-index: 1;
         }
 
         header {
@@ -80,6 +96,8 @@
             border: 1px solid #333;
             padding: 30px;
             max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(2px);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -178,6 +196,8 @@
 </head>
 <body>
 
+    <canvas id="dust-canvas"></canvas>
+
     <header>
         <div class="tag">ID: 01 // PORTFOLIO</div>
         <div class="tag">SHOWS_PAGE //</div>
@@ -188,8 +208,7 @@
             <h1>СЕРИАЛЫ</h1>
             <p class="section-desc">То, что отсматривается прямо сейчас в фоновом или активном режиме.</p>
             
-            <!-- Ссылка откроется в новой вкладке -->
-            <a href="https://mentalust-lordfilms.ru" class="show-link-card" target="_blank">
+            <a href="https://mentalust-lordfilms.ru" target="_blank" class="show-link-card">
                 <div class="show-status">// СЕЙЧАС СМОТРЮ</div>
                 <div class="show-title">Mentalist</div>
                 <div class="show-desc">История Патрика Джейна. Детективная драма про использование навыков психологического анализа для раскрытия сложных преступлений.</div>
@@ -208,5 +227,63 @@
         <div>ST. PETERSBURG</div>
     </footer>
 
+    <script>
+        const canvas = document.getElementById('dust-canvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray = [];
+        const numberOfParticles = 60;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = Math.random() * 0.5 - 0.25;
+                this.speedY = Math.random() * 0.4 + 0.1;
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.y > canvas.height) {
+                    this.y = 0;
+                    this.x = Math.random() * canvas.width;
+                }
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+            }
+            draw() {
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+            }
+            requestAnimationFrame(animate);
+        }
+        init();
+        animate();
+    </script>
 </body>
 </html>
