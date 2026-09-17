@@ -1,16 +1,127 @@
-<!doctype html>
-<html lang="<!-- figma:lang -->">
-  <head>
-    <!-- figma:head-start -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!-- figma:title --></title>
-    <!-- figma:head-end -->
-  </head>
-  <body>
-    <!-- figma:body-start -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- figma:body-end -->
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus — Образование</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+        }
+
+        .tag {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #888;
+        }
+
+        main {
+            margin: 60px 0;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .nickname {
+            font-size: 1.5rem;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .nickname span {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        .bio-section {
+            max-width: 600px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ccc;
+            border-left: 2px solid #fff;
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .college-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .college-link:hover {
+            background-color: #000;
+            color: #fff;
+            outline: 1px solid #fff;
+        }
+
+        footer {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="tag">ID: 01 // PORTFOLIO</div>
+        <div class="tag">B&W EDITION</div>
+    </header>
+
+    <main>
+        <h1>Егор Фролов Денисович</h1>
+        <div class="nickname">nickname: <span>nexus</span></div>
+        
+        <div class="bio-section">
+            <p>Сфера интересов: технологии, киберпространство и развитие. Базируюсь в Санкт-Петербурге. Получаю профильное образование, формирую цифровой опыт.</p>
+        </div>
+
+        <a href="https://petrocollege.ru/" class="college-link" target="_blank">здесь обитаю</a>
+    </main>
+
+    <footer>
+        <div>© 2026 NEXUS</div>
+        <div>ST. PETERSBURG</div>
+    </footer>
+
+</body>
 </html>
