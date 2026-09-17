@@ -11,6 +11,12 @@
             box-sizing: border-box;
         }
 
+        /* Возвращаем анимации плавного появления */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         body {
             background-color: #000000;
             color: #ffffff;
@@ -52,6 +58,7 @@
             border-bottom: 1px solid #222;
             padding-bottom: 20px;
             width: 100%;
+            animation: fadeIn 0.8s ease forwards;
         }
 
         .tag {
@@ -60,17 +67,22 @@
             color: #666;
         }
 
+        /* Единая флекс-структура расположения меню как на Shows */
         .layout {
             display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             width: 100%;
             margin: 60px 0;
-            position: relative;
+            gap: 50px;
         }
 
         main {
-            width: 100%;
+            flex: 1;
             max-width: 650px;
-            padding-right: 40px;
+            width: 100%;
+            animation: fadeIn 1s ease 0.2s forwards;
+            opacity: 0;
         }
 
         h1 {
@@ -89,17 +101,20 @@
             margin-bottom: 40px;
         }
 
+        /* Возвращаем крутой интерактивный глитч-эффект */
         .nickname span {
             color: #fff;
             border-bottom: 2px solid #fff;
             cursor: pointer;
             display: inline-block;
-            transition: font-weight 0.2s ease, letter-spacing 0.2s ease;
+            transition: all 0.3s ease;
         }
 
         .nickname span:hover {
-            font-weight: 900;
-            letter-spacing: 2px;
+            transform: skewX(-10deg);
+            text-shadow: 2px 2px #ff0000, -2px -2px #0000ff;
+            background: #fff;
+            color: #000;
         }
 
         .bio-section {
@@ -191,19 +206,19 @@
             color: #aaa;
         }
 
-        /* Правое меню: абсолютно центрировано по вертикали и привязано к краю во всех файлах одинаково */
+        /* Выравнивание меню переведено в стандартный липкий флекс-блок (как на Shows) */
         .side-nav {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            flex: 0 0 auto;
             display: flex;
             flex-direction: column;
             gap: 25px;
             align-items: flex-end;
             border-left: 1px solid #222;
             padding-left: 30px;
-            z-index: 10;
+            position: sticky;
+            top: 40px;
+            animation: fadeIn 1s ease 0.4s forwards;
+            opacity: 0;
         }
 
         .nav-item {
@@ -245,20 +260,20 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+            animation: fadeIn 0.8s ease forwards;
         }
 
         @media (max-width: 900px) {
             .layout { flex-direction: column; gap: 40px; margin: 40px 0; }
-            main { max-width: 100%; padding-right: 0; }
+            main { max-width: 100%; }
             .side-nav {
-                position: static;
-                transform: none;
                 align-items: flex-start;
                 border-left: none;
                 border-top: 1px solid #222;
                 padding-left: 0;
                 padding-top: 20px;
                 width: 100%;
+                position: static;
             }
             .nav-item::after { left: 0; right: auto; }
             .nav-item.active, .nav-item:hover { transform: translateX(5px); }
