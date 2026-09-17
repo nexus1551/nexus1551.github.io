@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus — Сериалы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            padding-bottom: 20px;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .tag {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #666;
+        }
+
+        .layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 60px 0;
+            gap: 40px;
+            width: 100%;
+        }
+
+        main {
+            max-width: 70%;
+            width: 100%;
+            animation: fadeIn 1s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .section-desc {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .show-link-card {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #333;
+            padding: 30px;
+            max-width: 500px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .show-link-card:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            transform: translateX(10px);
+        }
+
+        .show-status {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .show-link-card:hover .show-status { color: #888; }
+
+        .show-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .show-desc {
+            font-size: 0.95rem;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        .show-link-card:hover .show-desc { color: #222; }
+
+        .side-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-end;
+            border-left: 1px solid #222;
+            padding-left: 30px;
+            position: sticky;
+            top: 40px;
+            animation: fadeIn 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .nav-item {
+            font-size: 1.2rem;
+            color: #444;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            right: 0;
+            background-color: #fff;
+            transition: width 0.3s ease;
+        }
+
+        .nav-item.active, .nav-item:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .nav-item:hover::after { width: 100%; }
+
+        footer {
+            border-top: 1px solid #222;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .layout { flex-direction: column; }
+            main { max-width: 100%; }
+            .side-nav {
+                flex-direction: row; align-items: center; border-left: none;
+                border-top: 1px solid #222; padding-left: 0; padding-top: 20px;
+                width: 100%; justify-content: space-between; margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="tag">ID: 01 // PORTFOLIO</div>
+        <div class="tag">SHOWS_PAGE //</div>
+    </header>
+
+    <div class="layout">
+        <main>
+            <h1>СЕРИАЛЫ</h1>
+            <p class="section-desc">То, что отсматривается прямо сейчас в фоновом или активном режиме.</p>
+            
+            <!-- Карточка-ссылка на Менталиста -->
+            <a href="https://mentalust-lordfilms.ru/?ysclid=mu5i8d6hgi994233402" class="show-link-card" target="_blank">
+                <div class="show-status">// СЕЙЧАС СМОТРЮ</div>
+                <div class="show-title">Менталист</div>
+                <div class="show-desc">История Патрика Джейна. Детективная драма про использование навыков психологического анализа для раскрытия сложных преступлений.</div>
+            </a>
+        </main>
+
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item">01 // ГЛАВНАЯ</a>
+            <a href="games.html" class="nav-item">02 // ИГРОВОЙ АВТОМАТ</a>
+            <a href="shows.html" class="nav-item active">03 // СЕРИАЛЫ</a>
+        </nav>
+    </div>
+
+    <footer>
+        <div>© 2026 NEXUS</div>
+        <div>ST. PETERSBURG</div>
+    </footer>
+
+</body>
+</html>
